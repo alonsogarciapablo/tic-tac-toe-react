@@ -1,0 +1,32 @@
+:root {
+  --square-size: 100px;
+}
+
+.square {
+  border: 2px solid black;
+  float: left;
+  font-size: 3rem;
+  font-weight: bold;
+  margin-right: -2px;
+  margin-top: -2px;
+  padding: 0;
+  text-align: center;
+  line-height: var(--square-size);
+  height: var(--square-size);
+  width: var(--square-size);
+  background-color: white;
+}
+.square:hover {
+  cursor: pointer;
+}
+.square:focus {
+  outline: none;
+}
+.square__placholder {
+  display: none;
+  color: #cdcdcd;
+}
+.square:hover .square__placholder {
+  display: block;;
+}
+
